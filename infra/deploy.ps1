@@ -16,7 +16,7 @@ $ErrorActionPreference = "Stop"
 
 # ── Config - from pipeline variables (PS 5.1 compatible) ──────
 if ($env:RESOURCE_GROUP)  { $resourceGroup = $env:RESOURCE_GROUP }
-else                      { $resourceGroup = "rg-secrets-cleanup-dev" }
+else                      { $resourceGroup = "dev" }
 
 if ($env:LOCATION)        { $location = $env:LOCATION }
 else                      { $location = "eastus" }
