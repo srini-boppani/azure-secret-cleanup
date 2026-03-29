@@ -9,10 +9,10 @@ $ErrorActionPreference = "Stop"
 
 # ── Config ────────────────────────────────────────────────────
 if ($env:RESOURCE_GROUP)          { $resourceGroup         = $env:RESOURCE_GROUP }
-else                              { $resourceGroup         = "rg-secrets-cleanup-dev" }
+else                              { $resourceGroup         = "dev" }
 
 if ($env:AUTOMATION_ACCOUNT_NAME) { $automationAccountName = $env:AUTOMATION_ACCOUNT_NAME }
-else                              { $automationAccountName = "scleanup-automation-dev" }
+else                              { $automationAccountName = "dev" }
 
 if ($env:RUNBOOK_NAME)            { $runbookName           = $env:RUNBOOK_NAME }
 else                              { $runbookName           = "SecretCleanupRunbook" }
