@@ -1,0 +1,29 @@
+# ================================================================
+# common.yml
+# Purpose  : Shared variables used across all pipelines
+# Note     : No sensitive values here - those are in ADO
+#            Variable Group "tenant"
+# ================================================================
+
+variables:
+
+  # ── Agent ───────────────────────────────────────────────────
+  - name: AGENT_POOL
+    value: 'Srini_Machine'
+
+  # ── Azure ───────────────────────────────────────────────────
+  - name: SERVICE_CONNECTION
+    value: 'sc-secrets-cleanup-dev'
+
+  - name: RESOURCE_GROUP
+    value: 'rg-secrets-cleanup-dev'
+
+  - name: LOCATION
+    value: 'eastus'
+
+  # ── Scripts ─────────────────────────────────────────────────
+  - name: INSTALL_SCRIPT
+    value: 'setup/install-dependencies.ps1'
+
+  - name: TESTS_PATH
+    value: 'tests/unit/'

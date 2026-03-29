@@ -1,0 +1,13 @@
+﻿config/settings.json
+*.env
+.env
+local.settings.json
+*.pfx
+*.pem
+*.key
+*.log
+logs/
+.vscode/
+temp/
+tmp/
+*.tmp

@@ -1,0 +1,7 @@
+﻿{
+  "_comment": "Copy to settings.json and fill values. NEVER commit settings.json",
+  "tenantId": "<your-tenant-id>",
+  "managedIdentityClientId": "<your-managed-identity-client-id>",
+  "subscriptionId": "<your-subscription-id>",
+  "resourceGroup": "<your-resource-group>"
+}

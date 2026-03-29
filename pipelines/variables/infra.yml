@@ -1,0 +1,33 @@
+# ================================================================
+# infra.yml
+# Purpose  : Variables specific to IaC deployment
+# ================================================================
+
+variables:
+
+  # ── Bicep ───────────────────────────────────────────────────
+  - name: DEPLOY_SCRIPT
+    value: 'infra/deploy.ps1'
+
+  - name: TEMPLATE_FILE
+    value: 'infra/main.bicep'
+
+  - name: PARAM_FILE
+    value: 'infra/main.bicepparam'
+
+  # ── Automation Account ───────────────────────────────────────
+  - name: AUTOMATION_ACCOUNT_NAME
+    value: 'scleanup-automation-dev'
+
+  - name: RUNBOOK_NAME
+    value: 'SecretCleanupRunbook'
+
+  - name: SCHEDULE_NAME
+    value: 'WeeklySecretCleanup'
+
+  - name: RUNBOOK_SCRIPT
+    value: 'scripts/delete-expired-secrets-runbook.ps1'
+
+  # ── Verify ───────────────────────────────────────────────────
+  - name: VERIFY_SCRIPT
+    value: 'scripts/Verify-Deployment.ps1'
